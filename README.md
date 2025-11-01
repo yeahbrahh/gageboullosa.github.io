@@ -11,3 +11,6 @@ Expanding my portfolio with new creative coding projects and continuing to explo
 [View My Resume](https://github.com/yeahbrahh/yeahbrahh.github.io/blob/main/Gage_B_Resume.pdf)
 
 [View My Algorithm Implementations](algorithms.md)
+
+[LinkedIn](https://www.linkedin.com/in/yeahbrahh/)
+
