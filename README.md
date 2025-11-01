@@ -1,2 +1,2 @@
 # yeahbrahh.github.io
-Gage Boullosa Portfolio
+Gage Boullosa's Portfolio
