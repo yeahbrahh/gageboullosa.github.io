@@ -450,3 +450,244 @@ def countPermStr(string1, string2):
 
     return matches
 ```
+## Palindrome Number
+
+```python
+class Solution(object):
+    def isPalindrome(self, x):
+        n = str(x)
+        if n == n[::-1]:
+            return True
+        return False       
+       
+```
+
+## Roman to Integer
+
+```java
+class Solution {
+    public int romanToInt(String s) {
+        HashMap<Character,Integer> hashtable = new HashMap<>();
+         hashtable.put('I', 1);
+         hashtable.put('V', 5);
+         hashtable.put('X', 10);
+         hashtable.put('L', 50);
+         hashtable.put('C', 100);
+         hashtable.put('D', 500);
+         hashtable.put('M', 1000);
+         int sum = 0;
+
+        for(int i = 0; i < s.length(); i++){
+            int current = hashtable.get(s.charAt(i));
+            if(i + 1 < s.length() && current < hashtable.get(s.charAt(i + 1))){
+                 sum -= current;
+            } else{
+                sum += current;
+            }
+    }
+        return sum;
+
+
+
+ }
+}
+```
+## Find the Index of the First Occurence in a String
+
+```java
+
+class Solution {
+    public int strStr(String haystack, String needle) {
+        int index = haystack.indexOf(needle);
+        if(index == -1){
+            return -1;
+        }
+        return index;
+        
+    }
+}
+```
+
+## Length of Last Word
+
+```java
+class Solution {
+    public int lengthOfLastWord(String s) {
+       s = s.trim();
+       int lastIndex = s.lastIndexOf(" ");
+       String lastWord = s.substring(lastIndex + 1);
+       return lastWord.length();
+
+    }
+}
+```
+
+## Contains Duplicate
+
+```java
+class Solution {
+    public boolean containsDuplicate(int[] nums) {
+        Arrays.sort(nums);
+        for (int i = 0; i < nums.length - 1; i++) {
+            if (nums[i] == nums[i + 1]) {
+                return true;
+            }
+        }
+        return false;
+
+    }
+}
+```
+
+## Sign of the Product of an Array
+
+```java
+class Solution {
+    public int arraySign(int[] nums) {
+        int k = 0;
+        for(int i = 0; i < nums.length; i++){
+            if(nums[i] < 0){
+                k++;
+            }
+            if(nums[i] == 0){
+                return 0;
+            }
+        }
+        if(k % 2 == 0){
+            return 1;
+        }
+
+        return -1;
+    }
+}
+```
+
+## To Lower Case
+
+```java
+class Solution {
+    public String toLowerCase(String s) {
+        StringBuilder built = new StringBuilder();
+        for(int i = 0; i < s.length(); i++){
+            char c = s.charAt(i);
+            switch(c){
+                case 'A':
+                    built.append('a');
+                    continue;
+                case 'B':
+                    built.append('b');
+                    continue;
+                case 'C':
+                    built.append('c');
+                    continue;
+                case 'D':
+                    built.append('d');
+                    continue;
+                case 'E':
+                    built.append('e');
+                    continue;
+                case 'F':
+                    built.append('f');
+                    continue;
+                case 'G':
+                    built.append('g');
+                    continue;
+                case 'H':
+                    built.append('h');
+                    continue;
+                case 'I':
+                    built.append('i');
+                    continue;
+                case 'J':
+                    built.append('j');
+                    continue;
+                case 'K':
+                    built.append('k');
+                    continue;
+                case 'L':
+                    built.append('l');
+                    continue;
+                case 'M':
+                    built.append('m');
+                    continue;
+                case 'N':
+                    built.append('n');
+                    continue;
+                case 'O':
+                    built.append('o');
+                    continue;
+                case 'P':
+                    built.append('p');
+                    continue;
+                case 'Q':
+                    built.append('q');
+                    continue;
+                case 'R':
+                    built.append('r');
+                    continue;
+                case 'S':
+                    built.append('s');
+                    continue;
+                case 'T':
+                    built.append('t');
+                    continue;
+                case 'U':
+                    built.append('u');
+                    continue;
+                case 'V':
+                    built.append('v');
+                    continue;
+                case 'W':
+                    built.append('w');
+                    continue;
+                case 'X':
+                    built.append('x');
+                    continue;
+                case 'Y':
+                    built.append('y');
+                    continue;
+                case 'Z':
+                    built.append('z');
+                    continue;
+                default:
+                    built.append(c);
+                    continue;
+            }
+        }
+        return built.toString();
+    }
+}
+```
+## Move Zeroes
+
+```java
+class Solution {
+    public void moveZeroes(int[] nums) {
+        int j = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != 0) {
+                int temp = nums[i];
+                nums[i] = nums[j];
+                nums[j] = temp;
+                j++;
+            }
+        }
+    }
+}
+```
+
+## Add Digits
+
+```java
+class Solution {
+    public int addDigits(int num) {
+        int digit = num % 10;
+
+        if(num < 10){
+            return num;
+        }
+       return addDigits(digit + num /10);
+        
+    }
+}
+```
