@@ -1,3 +1,5 @@
+# My CS Projects
+
 ## [Project: Music Analyzer — Interactive CLI Application](https://github.com/yeahbrahh/Music-Analyzer)
 
 This project involved developing a stateful, menu-driven command-line program in Java that analyzed music datasets stored in CSV files. Users could load a folder of files, select a dataset, and run a variety of analytical features such as Song Stats, User Similarity, User Prediction, and User Recommendation.
