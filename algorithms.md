@@ -1,3 +1,5 @@
+# Algorithms
+
 ## N-Queens
 
 ```python
