@@ -4,7 +4,9 @@ I am Gage Boullosa, a third year Computer Science student at Colorado State Univ
 
  ## My Current Goals
 
-Expanding my portfolio with new creative coding projects and continuing to explore how technology and design intersect to improve user experience and accessibility.
+* Expanding my portfolio with new creative coding projects and continuing to explore how technology and design intersect to improve user experience and accessibility.
+
+* Learning The C Programming Language.
 
 [View My CSU Projects](cs-projects.md)
 
